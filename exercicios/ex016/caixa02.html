@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: gainsboro;
+        }
+
+        header{
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: 5px auto;
+        }
+
+        header > h1{
+            margin: 5px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        nav{
+            background-color: rgb(238, 166, 107);
+            padding: 4px;
+            margin: 5px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.349);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: whitesmoke;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            border: 1px solid rgba(255, 255, 255, 0.616);
+            background-color: rgba(212, 111, 28, 0.507);
+            padding: 2px;
+            border-radius: 5px;
+        }
+        
+        main{
+            background-color: rgb(253, 250, 245);
+            padding: 10px;
+            margin: 5px auto;
+            border-radius: 0px 15px ;
+            /*top-left top-right bottom-right bottom-left*/
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.459);
+        }
+
+        menu{
+            margin: auto;
+            padding: 10px;
+        }
+        
+        menu > a{
+            text-decoration: none;
+            font-style: italic;
+            color: rgb(114, 117, 119);
+
+        }
+
+        aside{
+            position: relative;
+            left: 65%;
+            bottom: 110px;
+        }
+
+        article{
+            border-radius: 5px;
+            border: 1px solid lightgray ;
+            padding: 10px;
+        }
+        
+        footer{
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+            padding: 4px ;
+            margin: 4px auto;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>               
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos"></section>
+        <section id="noticias">
+            <menu>
+                <a href="#">Esportes</a>
+                <a href="#">Política</a>
+                <a href="#">Tecnologia</a>
+            </menu>
+            <article>
+                <h2>Noticias</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas nesciunt repellat molestias veritatis ducimus repellendus ad sint impedit recusandae, amet a mollitia iusto maiores beatae cum corporis, ipsam eum?
+                </p>
+                <aside>
+                    <p>Artigo escrito por Zezinho</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolido por Curso em Video</p>
+    </footer>
+    <div id="bola">
+    </div>
+    
+</body>
+</html>
